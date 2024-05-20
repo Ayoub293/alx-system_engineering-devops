@@ -1,3 +1,10 @@
-rm: cannot remove '/etc/nginx/sites-enavled/default': No such file or directory
-./0-nginx_likes_port_80: line 7: Ln: command not found
-nginx: unrecognized service
+grep: /etc/nginx/sites-enabled/default: No such file or directory
+Error: 'listen 80 default_server;' is missing or misconfigured in /etc/nginx/sites-enabled/default
+Updating the configuration to bind port 80 to all IPv4 addresses...
+awk: cannot open /etc/nginx/sites-enabled/default (No such file or directory)
+sudo: netstat: command not found
+Error: Nginx is not run with sudo privileges
+Restarting Nginx with sudo privileges...
+System has not been booted with systemd as init system (PID 1). Can't operate.
+Failed to connect to bus: Host is down
+sudo: ufw: command not found
